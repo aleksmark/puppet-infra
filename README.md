@@ -1,5 +1,5 @@
 Dockerized puppet master with one puppet agent node
-The node is certified with master on the container start
+
 All manifest files from puppet/manifests directory will be applied
 
 Prerequisite
