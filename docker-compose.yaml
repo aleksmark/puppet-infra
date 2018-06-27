@@ -1,0 +1,15 @@
+version: '3'
+
+services:
+  puppet:
+    build:
+      context: ./docker/master
+    volumes:
+      - ./puppet/manifests/:/etc/puppetlabs/code/environments/production/manifests/
+    container_name: "puppet-master"
+  remote1:
+    build:
+      context: ./docker/remote
+    environment:
+      REMOTE_HOST: remote1
+    container_name: "puppet-remote-1"

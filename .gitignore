@@ -1,0 +1,4 @@
+puppet/manifests/*
+!puppet/manifests/sample_file.pp
+!puppet/manifests/sample_appache.pp
+
