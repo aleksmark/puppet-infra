@@ -6,6 +6,7 @@ services:
       context: ./docker/master
     volumes:
       - ./puppet/manifests/:/etc/puppetlabs/code/environments/production/manifests/
+      - ./puppet/modules/:/etc/puppetlabs/code/environments/production/modules/
     container_name: "puppet-master"
   remote1:
     build:

@@ -1,5 +1,3 @@
 node 'remote1' {
-	class { 'apache': }
+    class { 'apache': }
 }
-
-

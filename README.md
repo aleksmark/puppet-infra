@@ -15,7 +15,12 @@ $ docker-compose up -D
 
 run ad hoc puppet manifest file
 ```
-$ docker exec -it puppet-master puppet apply /etc/puppet/manifests/sample_file.pp
+$ docker exec -it puppet-master puppet apply /etc/puppetlabs/code/environments/production/manifests/sample_file.pp
+```
+
+install puppet module
+```
+$ docker exec -it puppet-master bash -c 'puppet module install puppetlabs-apache'
 ```
 
 provision puppet agent node
