@@ -10,4 +10,4 @@ RUN wget http://downloads.puppetlabs.com/puppet/puppet-5.3.1.tar.gz && \
 	./puppet-5.3.1/install.rb
 
 CMD printf "autosign = true\n" >> /etc/puppetlabs/puppet/puppet.conf && \
-	puppet master --no-daemonize
+	puppet master --certname puppet --no-daemonize

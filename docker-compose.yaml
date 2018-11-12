@@ -7,6 +7,7 @@ services:
     volumes:
       - ./puppet/manifests/:/etc/puppetlabs/code/environments/production/manifests/
       - ./puppet/modules/:/etc/puppetlabs/code/environments/production/modules/
+      - ./puppet/lib/:/etc/puppetlabs/code/environments/production/lib/
     container_name: "puppet-master"
   remote1:
     build:
